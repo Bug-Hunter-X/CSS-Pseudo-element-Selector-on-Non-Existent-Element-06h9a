@@ -1,0 +1,5 @@
+The following CSS rule attempts to use a pseudo-element selector `::before` on an element that doesn't exist in the DOM. This results in no visual change and might go unnoticed during development if not explicitly checked.  ```css
+.nonexistent-element::before {
+  content: "This text won't show!";
+}
+```
